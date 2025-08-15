@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style .css">
+
+
+</head>
+
+<body>
+
+  <header class="header">
+
+  <nav class="navbar">
+    <h2 style="color: blue;">Hotel</h2>
+
+    <ul  class="link">
+      <li><a href="#">Home</a></li>
+      <li><a href="#room" onclick="room()">Rooms</a></li>
+      <li><a href="#about" onclick="about()">About us</a></li>
+      <li><a href="#services" onclick="service()"> services</a></li>
+      <li><a href="#gellery" onclick="gellery()"> gellery</a></li>
+
+  
+    </ul>
+
+    <button onclick="fun()" class="login-btn">longin</button>
+
+   <button onclick="showAdminLogin()" class="admin-btn">Admin</button>
+  <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+
+
+  </nav>
+
+
+</header>
+
+
+<div class="moment">
+   <h2><i>Hotel for memorable</i></h2>
+        <h2><i>moment rich in emotions</i></h2>
+        <p>Enjoy your vacation</p>
+        <p>A hotel booking website that allows user to book<br>room in their favourite top-rated hotel
+         to enjoy their vacation</p>
+
+  <button class="book">Book Now</button>
+</div>
+
+
+      <div class="form-pop">
+        <button onclick="closeForm()" class="close-btn">x</button>
+        <h2>login here</h2>
+        <form action="login.html" onsubmit=" return storedata()">
+
+          <label for="Name">name</label>
+         <input type="text" id="name" ><br><br>
+ 
+         <label for="Contact">contact</label>
+         <input type="text" id="contact" ><br><br>
+
+         <label for="Email">email</label>
+         <input type="text" id="email" ><br><br>
+
+         <label for="Password">password</label>
+         <input type="text" id="password" ><br><br>
+      
+         <input type="submit" value="sign up">
+
+
+   
+        </form>
+                  
+
+
+      </div>
+
+
+
+
+        <!-- about section -->
+
+        <section class="about" id="about">
+          <h1 class="heading" align="center">about <span> us</span></h1>
+          <div class="row">
+            <div class="image">
+            <img src="download.webp" alt="">
+            </div>
+            <div class="content">
+              <h3>Welcome to Hotelier</h3>
+              <p> Discover the pinnacle of luxury and sophistriction at **Hotelier**, where every detail is crafted
+                to perfect . from the moment you arrive , our mission is to provide an experience that  blends unparallled elegance width
+                personalised service.
+              </p>
+              <div class="philosophy"> 
+                <div class="philosophy-items ">
+                  <i class="fas fa-globe"> </i>
+                  <h4>Global Elegance</h4>
+                  <p>Hotelier blend <br>timeless design<br> with global influence to<br>  create an experiance<br> that transcends
+                    border
+                  </p>
+
+                </div>
+                <div class="philosophy-items ">
+                  <i class="fas fa-heart"> </i>
+                  <h4>Exceptional Hospitality</h4>
+                  <p>Our dedicated team  <br>is committed to<br> making every guest<br> feel value.</p>
+
+                </div>
+
+                <div class="philosophy-items ">
+                  <i class="fas fa-leaf"> </i>
+                  <h4>Sustaintable luxury</h4>
+                  <p>experiance indulgence  <br>with a conscience <br> We prioritize <br>eco-friendly practice.</p>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+    
+
+<!-- Room section -->
+
+<section class="room" id="room">
+
+  <h1 class="heading" align="center"> Our <span> rooms</span></h1>
+
+  <div class="swipper room-slider">
+
+    <div class="swipper-wrapper">
+
+        <div class="swipper-slide ">
+          <div class="night">
+             <a href="rooms.html"><img src="OIP (5).webp" alt="" height="300px" width="350px"></a> 
+            <div align="center">
+              <h3>exclusive room</h3>
+             <p>Stay in comfort and style with our exclusive room.<br> perfect for relexation and conenience</p>
+             
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star-half-alt"> </i><br><br>
+
+              
+              <button class="btn"> Book now</button>
+            </div>
+          </div>
+        </div>
+
+      <div class="swipper-slide">
+        <div class="night">
+               <a href="rooms.html"><img src="OIP (6).webp" alt="" height="300px" width="350px"></a>
+            <div align="center">
+              <h3>exclusive room</h3>
+             <p>Stay in comfort and style with our exclusive room.<br> perfect for relexation and conenience</p>
+             
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star-half-alt"> </i><br><br>
+
+              
+              <button class="btn"> Book now</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="swipper-slide ">
+       <div class="night">
+             <a href="rooms.html"><img src="OIP (7).webp" alt="" height="300px" width="350px"></a>
+            <div align="center">
+              <h3>exclusive room</h3>
+             <p>Stay in comfort and style with our exclusive room.<br> perfect for relexation and conenience</p>
+             
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star-half-alt"> </i><br><br>
+
+              
+              <button class="btn"> Book now</button>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="swipper-slide ">
+        <div class="night">
+              <a href="rooms.html"> <img src="OIP (8).webp" alt="" height="300px" width="350px"></a>
+            <div align="center">
+              <h3>exclusive room</h3>
+             <p>Stay in comfort and style with our exclusive room.<br> perfect for relexation and conenience</p>
+             
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star-half-alt"> </i><br><br>
+
+              
+              <button class="btn"> Book now</button>
+            </div>
+          </div>
+      </div>
+
+            <div class="swipper-slide ">
+        <div class="night">
+             <a href="rooms.html"><img src="Desig.jpg" alt="" height="300px" width="350px"></a> 
+            <div align="center">
+              <h3>exclusive room</h3>
+             <p>Stay in comfort and style with our exclusive room.<br> perfect for relexation and conenience</p>
+             
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star-half-alt"> </i><br><br>
+
+              
+              <button class="btn"> Book now</button>
+            </div>
+          </div>
+      </div>
+
+            <div class="swipper-slide ">
+        <div class="night">
+              <a href="rooms.html"><img src="OIP.jpg" alt="" height="300px"  width="350px"></a>
+            <div align="center">
+              <h3>exclusive room</h3>
+             <p>Stay in comfort and style with our exclusive room.<br> perfect for relexation and conenience</p>
+             
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star"> </i>
+               <i class="fas fa-star-half-alt"> </i><br><br>
+
+              
+              <button class="btn"> Book now</button>
+            </div>
+          </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+
+</section>
+
+<!-- service section -->
+
+<section class="services" id="services">
+  <h1 class="heading" align="center"> Our services</h1>
+  <div class="box-container">
+    
+    <div class="box" align="center">
+      <i class="fas fa-swimming-pool"></i>
+      <h3>swiming pool </h3><br>
+      <p>Enjoy a refreshing dip in our<br> luxious swiming pool</p>
+
+    </div>
+
+    <div class="box" align="center">
+      <i class="fas fa-utensils"></i>
+      <h3>food & drink</h3><br>
+      <p>Savor delicious cuisinas and <br>beverages crafted just for you</p>
+
+    </div>
+
+    <div class="box" align="center">
+      <i class="fas fa-hotel"></i>
+      <h3>restaurent</h3><br>
+      <p>Dine in elegance at our on-site<br> restaurent offering diverse</p>
+
+    </div>
+
+    <div class="box" align="center">
+      <i class="fas fa-dumbbell"></i>
+      <h3>fitness</h3><br>
+      <p>Stay active and healthy  in our <br> state-of-the-art fitness center</p>
+
+    </div>
+    <div class="box" align="center">
+      <i class="fas fa-spa"></i>
+      <h3>beauty spa</h3><br>
+      <p>Relex and rejuvanate with <br>our exclusive spa treatment</p>
+
+    </div>
+    <div class="box" align="center">
+      <i class="fas fa-umbrella-beach"></i>
+      <h3>resort beach</h3><br>
+      <p>experiance top-tier Hospitality<br> with round-the-clock concierge services<br> Unwind on the serene sends of our<br> private resort beach</p>
+
+    </div>
+    <div class="box" align="center">
+      <i class="fas fa-concierge-bell"></i>
+      <h3>24/7 concierge</h3><br>
+      <p> experiance top-tier Hospitality with <br>round-the-clock concierge services</p>
+
+    </div>
+    <div class="box" align="center">
+      <i class="fas fa-parking"></i>
+      <h3>resort beach</h3><br>
+      <p>Enjoy hassile-free parking with <br>our professional valet service</p>
+
+    </div>
+   
+  </div>
+
+</section>
+
+
+<!-- gellery section -->
+
+<section class="gellery" id="gellery">
+  <h1 class="heading" align="center"> Our gellery</h1>
+  <div class="gellery-sliders">
+    <div class="swipper-wrappers" >
+      <div class="swipper-slides">
+         
+               <img src="OIP (11).webp" alt="" height="300px" width="350px">
+          <div class="icon">
+             <i class="fas fa-maginifying-glass-plus"> </i>
+          </div>
+          
+      </div>
+
+      <div class="swipper-slides">
+          
+               <img src="OIP (12).webp" alt="" height="300px" width="350px">
+            <div  class="icon" >
+             
+            </div>
+         
+      </div>
+
+      <div class="swipper-slides ">
+     
+               <img src="download (1).webp" alt="" height="300px" width="350px">
+            <div class="icon">
+             
+            </div>
+          
+      </div>
+
+
+      <div class="swipper-slides ">
+      
+               <img src="OIP (4).webp" alt="" height="300px" width="350px">
+            <div class="icon">
+             
+            </div>
+         
+      </div>
+
+       <div class="swipper-slides ">
+        
+               <img src="resort-5.jpg" alt="" height="300px" width="350px">
+            <div class="icon">
+             
+            </div>
+         
+      </div>
+
+      <div class="swipper-slides ">
+      
+               <img src="OIP (7).webp" alt="" height="300px"  width="350px">
+            <div class="icon">
+              
+           
+          </div>
+     
+
+
+      </div>
+    </div> 
+  </div>
+
+</section>
+<!-- booking section form -->
+
+
+
+<section class="booking" id="booking">
+  <h1 class="heading" align="center"> Hotel <span> Booking Form</span></h1>
+
+<form action="table.html" id="bookingForm" class="booking-form">
+  <input type="text" id="bname" placeholder="Name" required>
+
+  <div class="row">
+    <input type="email" id="bemail" placeholder="Email" required>
+    <input type="text" id="bphone" placeholder="Phone" required>
+  </div>
+
+  <input type="text" id="baddress" placeholder="Address" required>
+
+  <div class="row">
+    <input type="text" id="bcity" placeholder="City" required>
+    <input type="text" id="bstate" placeholder="State" required>
+  </div>
+
+  <div class="row">
+    <input type="text" id="bzip" placeholder="Zip Code" required>
+    <input type="text" id="bcountry" placeholder="Country" required>
+  </div>
+
+  <div class="row">
+    <input type="date" id="bcheckin" placeholder="Check In" required>
+    <input type="date" id="bcheckout" placeholder="Check Out" required>
+  </div>
+
+  <div class="row">
+    <input type="number" id="bno" placeholder="No Of Person" required>
+    <select id="bgender" required>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <select id="badults" required>
+      <option value="">Adults</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3+</option>
+    </select>
+
+    <select id="bkids" required>
+      <option value="">Kids</option>
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3+</option>
+    </select>
+  </div>
+    <button type="submit" class="btn">submit</button>
+
+</form>
+</section>
+
+
+
+
+
+<!-- footer -->
+<section class="footer">
+  <div class="boxes-containers">
+    <div class="boxes">
+      <h3 class="brand-name"> Hotelier</h3><br>
+      <p class="info">Exprience luxury and comfort at its <br>finest.Subscription to our newsletter for update </p><br><br>
+      <form class="newsletter">
+        <input type="email" placeholder="enter your email"><br><br>
+        <button type="submit"> Subscription</button>
+      </form>
+
+    </div>
+    <div class="boxes">
+      <h3> contact info</h3><br>
+      <a href="#"><i class="fas fa-phone"></i> +123.534-8765</a><br><br>
+      <a href="#"><i class="fas fa-phone"></i> +123.534-8765</a><br><br>
+      <a href="#"><i class="fas fa-envelope"></i> +123.534-8765</a><br><br>
+      <a href="#"><i class="fas fa-map"></i>Sessame,usa</a><br><br>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-pinterst"></a>
+
+      </div>
+     
+
+    </div>
+
+    <div class="boxes">
+      <h3> Quick link</h3><br>
+      <a href="#"><i class="fas fa-arrow-right"></i> Home</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>about</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>rooms</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>gellery</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>service</a><br><br>
+
+     
+
+    </div>
+    <div class="boxes">
+      <h3>extra links</h3><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>refund policy</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>terms & condition</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>privacy policy</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>Faqs</a><br><br>
+      <a href="#"><i class="fas fa-arrow-right"></i>carrier</a><br><br>
+
+     
+
+    </div>
+
+
+
+
+  </div>
+
+</section>
+
+
+
+
+
+<div id="adminLoginForm" class="form-pop" style="display: none;">
+  <h2>Admin Login</h2>
+  <input type="text" id="adminUser" placeholder="Enter admin username" required>
+  <input type="password" id="adminPass" placeholder="Enter password" required>
+  <button onclick="adminLogin()">Login</button>
+  <button onclick="closeAdminLogin()">Close</button>
+</div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

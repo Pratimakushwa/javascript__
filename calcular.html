@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+       }
+       button{
+        width: 100%;
+       }
+       .btn{
+        border: 2px solid black;
+       }
+
+  
+    </style>
+</head>
+<body>
+<table>
+    <div class="btn">
+  
+    <tr >
+        <th colspan="3"><input type="text" id="a"></th>
+        <th><button onclick="btn()">c</button></th>
+    </tr>
+    <tr>
+    <th><button onclick="pic(1)">1</button></th>
+    <th><button onclick="pic(2)">2</button></th>
+    <th><button onclick="pic(3)">3</button></th>
+    <th><button onclick="pic('/')">/</button></th>
+    </tr>
+    <tr>
+    <th><button onclick="pic(4)">4</button></th>
+    <th><button onclick="pic(5)">5</button></th>
+    <th><button onclick="pic(6)">6</button></th>
+    <th><button onclick="pic('-')">-</button></th>
+    </tr>
+    <tr>
+    <th><button onclick="pic(7)">7</button></th>
+    <th><button onclick="pic(8)">8</button></th>
+    <th><button onclick="pic(9)">9</button></th>
+    <th><button onclick="pic('+')">+</button></th>
+    </tr>
+    
+    <tr>
+    <th><button onclick="pic('.')">.</button></th>
+    <th><button onclick="pic(0)">0</button></th>
+    <th><button onclick="solve()">=</button></th>
+    <th><button onclick="pic('*')">*</button></th>
+    </tr>
+    
+   </div>
+
+</table>
+
+    <script src="cakculater .js"></script>
+</body>
