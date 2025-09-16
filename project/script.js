@@ -250,3 +250,32 @@ savedata.innerHTML=apidata
     
 }
 demo()
+
+
+let right = document.querySelector('.right');
+let left = document.querySelector('.left');
+let slide = document.querySelector('.slide');
+let images = document.querySelectorAll('.image');
+
+let slidenumber = 0; // start from 0 (first image)
+let imageWidth = 600; // same as CSS frame width
+
+// 👉 Right Button (Next
+right.addEventListener('click', () => {
+    if (slidenumber < images.length) {
+        slidenumber++;
+    } else {
+        slidenumber = 0; // back to first image
+    }
+    slide.style.transform = `translateX(-${slidenumber * imageWidth}px)`;
+});
+
+// 👉 Left Button (Previous)
+left.addEventListener('click', () => {
+    if (slidenumber > 0) {
+        slidenumber--;
+    } else {
+        slidenumber = images.length ; // go to last image
+    }
+    slide.style.transform = `translateX(-${slidenumber * imageWidth}px)`;
+});
