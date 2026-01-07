@@ -279,3 +279,24 @@ left.addEventListener('click', () => {
     }
     slide.style.transform = `translateX(-${slidenumber * imageWidth}px)`;
 });
+
+
+
+
+const bgImages = [
+  "url('ggg.jpg')",
+  "url('hotel.jpg')",
+  "url('resort-5.jpg')",
+  "url('img.jpg')"
+];
+
+let index = 0;
+const momentSection = document.querySelector(".moment");
+
+function changeBg() {
+  momentSection.style.backgroundImage = bgImages[index];
+  index = (index + 1) % bgImages.length;
+}
+
+changeBg(); 
+setInterval(changeBg, 2000);
